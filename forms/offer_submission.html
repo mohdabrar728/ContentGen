@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer Submission Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Offer Submission Form</h1>
+    <form action="/submit-offer" method="post" enctype="multipart/form-data">
+        <label for="offer-title">Offer Title:</label>
+        <input type="text" id="offer-title" name="offer_title" required><br><br>
+
+        <label for="offer-description">Offer Description:</label><br>
+        <textarea id="offer-description" name="offer_description" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="existing-content">Upload Existing Content (optional):</label>
+        <input type="file" id="existing-content" name="existing_content"><br><br>
+
+        <input type="submit" value="Submit Offer">
+    </form>
+</body>
+</html>
