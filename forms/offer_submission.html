@@ -1,137 +1,69 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Offer Submission Form</title>
-
     <style>
-
     	body {
-
     font-family: Arial, sans-serif;
-
     margin: 20px;
-
 }
-
-
 
 form {
-
     max-width: 600px;
-
     margin: auto;
-
     padding: 20px;
-
     border: 1px solid #ccc;
-
     border-radius: 10px;
-
     background-color: #f9f9f9;
-
 }
-
-
 
 label {
-
     font-weight: bold;
-
 }
-
-
 
 input[type="text"],
-
 textarea {
-
     width: 100%;
-
     padding: 10px;
-
     margin-top: 5px;
-
     margin-bottom: 15px;
-
     border: 1px solid #ccc;
-
     border-radius: 5px;
-
 }
-
-
 
 input[type="file"] {
-
     margin-bottom: 15px;
-
 }
-
-
 
 input[type="submit"] {
-
     background-color: #4CAF50;
-
     color: white;
-
     padding: 10px 20px;
-
     border: none;
-
     border-radius: 5px;
-
     cursor: pointer;
-
 }
-
-
 
 input[type="submit"]:hover {
-
     background-color: #45a049;
-
 }
-
     </style>
-
 </head>
-
 <body>
-
     <h1>Offer Submission Form</h1>
-
     <form action="/submit-offer" method="post" enctype="multipart/form-data">
-
         <label for="offer-title">Offer Title:</label>
-
         <input type="text" id="offer-title" name="offer_title" required><br><br>
 
-
-
         <label for="offer-description">Offer Description:</label><br>
-
         <textarea id="offer-description" name="offer_description" rows="4" cols="50" required></textarea><br><br>
 
-
-
         <label for="existing-content">Upload Existing Content (optional):</label>
-
         <input type="file" id="existing-content" name="existing_content"><br><br>
 
-
-
         <input type="submit" value="Submit Offer">
-
     </form>
-
 </body>
-
 </html>
